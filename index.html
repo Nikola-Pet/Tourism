@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="header">
+			<img src="img/logo.jpg">
+		
+			<ul>
+				<li><a href="#video">O nama</a></li>
+				<li><a href="#galerija">Galerija</a></li>
+				<li><a href="#ponuda">Ponuda</a></li>
+			</ul>
+		</div>
+		<div class="video" id="video">
+			<video autoplay muted loop id="mp4">
+				<source src="video/video.mp4" type="video/mp4">
+			</video>
+
+			<div class="overlay-text">
+				<h3>Putujte sa nama</h3> <br>
+				<p>Obidjite najlepse predele Srbije</p>
+				<div class="modal-section">
+					<button onclick="openModal()">O nama</button>
+				</div>
+			</div>
+
+		
+			
+
+			<div class="popup-modal">
+				<button id="closeModal" onclick="closeModal()">X</button>
+		
+				<h4>Modal Title</h4>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+		</div>
+	
+		<h2>Galerija</h2>
+	
+		<div class="slider-wrapper" id="galerija">
+			<button id="left-btn"><i class="arrow"></i></button>
+			<div class="slider-images">
+				<img src="img/slide1.jpg">
+				<img src="img/slide2.jpg">
+				<img src="img/slide3.jpg">
+			</div>
+			<button id="right-btn"><i class="arrow"></i></button>
+		</div>
+	
+		<div class="section section2">
+	
+			
+			
+			<div class="images">
+				<img src="img/left.jpg" class="slideFromLeft">
+				<img src="img/right.jpg" class="slideFromRight">
+			</div>
+		</div>
+	
+		<h2  id="ponuda">Ponuda</h2>
+	
+		<div class="offer-wrapper">
+			<div class="offer-categories">
+				<button data-category='sve' onclick="portfolioSort(this)">Sve</button>
+				<button data-category='planina' onclick="portfolioSort(this)" class="brown">Planina</button>
+				<button data-category='etnoSelo' onclick="portfolioSort(this)" class="blue">Etno selo</button>
+				<button data-category='jezero' onclick="portfolioSort(this)" class="green">Jezero</button>
+				<button data-category='banja' onclick="portfolioSort(this)" class="rose">Banja</button>
+			</div>
+	
+			<div class="offer-items">
+				<div class="offer-single-item blue" data-category='etnoSelo'>
+					<h3>Stanisic</h3>
+				</div>
+	
+				<div class="offer-single-item rose" data-category='banja'>
+					<h3>Soko banja</h3>
+				</div>
+	
+				<div class="offer-single-item blue" data-category='etnoSelo'>
+					<h3>Drvengrad</h3>
+				</div>
+	
+				<div class="offer-single-item rose" data-category='banja'>
+					<h3>Niska banja</h3>
+				</div>
+	
+				<div class="offer-single-item green" data-category='jezero'>
+					<h3>Palicko jezero</h3>
+				</div>
+	
+				<div class="offer-single-item brown" data-category='planina'>
+					<h3>Kopaonik</h3>
+				</div>
+	
+				<div class="offer-single-item brown" data-category='planina'>
+					<h3>Zlatibor</h3>
+				</div>
+	
+				<div class="offer-single-item rose" data-category='banja'>
+					<h3>Vrnjacka banja</h3>
+				</div>
+	
+				<div class="offer-single-item blue" data-category='etnoSelo'>
+					<h3>Moravski konaci</h3>
+				</div>
+	
+				<div class="offer-single-item green" data-category='jezero'>
+					<h3>Vlasinsko jezero</h3>
+				</div>
+	
+				<div class="offer-single-item brown" data-category='planina'>
+					<h3>Tara</h3>
+				</div>
+	
+				<div class="offer-single-item green" data-category='jezero'>
+					<h3>Srebrno jezero</h3>
+				</div>
+			</div>
+		</div>
+
+		<div class="overlay"></div>
+	
+	</div>
+
+	
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
